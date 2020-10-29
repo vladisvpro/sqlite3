@@ -9,7 +9,7 @@ def adduser(name, surname, salary):
     conn.commit()
 
 
-n = int(input("Write number which dont take: "))
+n = int(input("Write a sum of money which dont take: "))
 q = n-1;
 a = n+1;
 
