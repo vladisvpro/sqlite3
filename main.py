@@ -17,24 +17,32 @@ name = input("Enter user name: ")
 surname = input("Enter user surname: ")
 salary = int(input("Enter user salary: "))
 
+while n < salary:
+    print("")
+    print("")
+    print("")
 
-if n < salary:
-    print("Error, you cant increase")
-             
-else:
-    print("All ok")
-
+    if n > salary:
+        print("This is first check--------All ok")
     
-salary = int(input("Pls little less then you specified: "))
+    else:
+        print("Oh....Sry you have Error-----you cant increase")
+        
 
-if n < salary:
-    print("Enter LITTLE LESS")
-             
-else:
-    print("All ok")
+        
+    salary = int(input("Enter little less: "))
 
 
-salary = input("Enter little less: ")
+
+    if n >= salary:
+        print("This is second check-------All ok")
+
+    else:
+        print("Pls enter", " ", salary)
+
+        break
+
+salary = input("Enter previous number or enter some number which was less previous for salary: ")
 
 adduser(name, surname, salary)
 
